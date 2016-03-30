@@ -3,17 +3,27 @@ using System.Collections;
 
 public class JumpScript : MonoBehaviour {
 
-	private GameObject player;
+	private GameObject playerObject;
+	private Player player;
+	private float distanceToGround;
+	private Transform groundCheck;
+	public float jumpHeight;
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		playerObject = GameObject.FindGameObjectWithTag ("Player");
+		player = playerObject.GetComponentInParent<Player> ();
 	}
-	
+
+	bool IsGrounded() {
+		return player.grounded;
+	}
+
 	// Update is called once per frame
 	void Update () {
-		if (Input.touchCount > 0|| Input.GetKey(KeyCode.UpArrow)) {
-			player.transform.Translate (Vector2.up * 5f * Time.deltaTime);
+		if ((Input.touchCount > 0 || Input.GetKeyDown(KeyCode.UpArrow)) && IsGrounded()) {
+			//playerObject.GetComponent<Rigidbody2D> ().velocity = new Vector2(0, jumpHeight);
+			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * jumpHeight);
 		}
 	}
 

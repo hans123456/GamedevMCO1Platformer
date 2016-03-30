@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 543eff3f49a5e5143a677216d62c9c25
-timeCreated: 1459274204
+timeCreated: 1459354200
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -57,106 +57,98 @@ TextureImporter:
     - name: "sprsheet_Genevi\xE9ve-attack_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 128
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 1
+        y: 1
+        width: 50
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 33, y: -64}
-        - {x: 49, y: -64}
-        - {x: 53, y: -58}
-        - {x: 53, y: 61}
-        - {x: 49, y: 64}
-        - {x: 18, y: 64}
-        - {x: 2, y: 59}
-        - {x: 0, y: 56}
-        - {x: 0, y: 48}
-        - {x: 3, y: 44}
-        - {x: 6, y: -64}
-        - {x: 28, y: -64}
-        - {x: 29, y: -62}
-        - {x: 29, y: -59}
-        - {x: 30, y: -61}
+      - - {x: 6, y: -62.5}
+        - {x: 25, y: -62.5}
+        - {x: 25, y: 62.5}
+        - {x: -20, y: 62.5}
+        - {x: -25, y: 59.5}
+        - {x: -25, y: -9.5}
+        - {x: -19, y: -62.5}
+        - {x: 2, y: -62.5}
+        - {x: 3, y: -61.5}
+        - {x: 3, y: -58.5}
+        - {x: 4, y: -60.5}
     - name: "sprsheet_Genevi\xE9ve-attack_1"
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
-        width: 66
-        height: 128
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 70
+        y: 2
+        width: 54
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 33, y: -63}
-        - {x: 49, y: -64}
-        - {x: 66, y: -56}
-        - {x: 66, y: 61}
-        - {x: 65, y: 64}
-        - {x: 12, y: 64}
-        - {x: 12, y: 62}
-        - {x: 8, y: 15}
-        - {x: 8, y: -64}
-        - {x: 28, y: -64}
-        - {x: 29, y: -61}
-        - {x: 29, y: -58}
-        - {x: 30, y: -60}
+      - - {x: -5, y: -62.5}
+        - {x: 13, y: -62.5}
+        - {x: 17, y: -55.5}
+        - {x: 27, y: -8.5}
+        - {x: 27, y: 40.5}
+        - {x: 16, y: 60.5}
+        - {x: 10, y: 62.5}
+        - {x: -12, y: 62.5}
+        - {x: -22, y: 52.5}
+        - {x: -27, y: -28.5}
+        - {x: -27, y: -62.5}
+        - {x: -6, y: -62.5}
+        - {x: -9, y: -54.5}
+        - {x: -7, y: -60.5}
     - name: "sprsheet_Genevi\xE9ve-attack_2"
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 128
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 136
+        y: 2
+        width: 54
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 31, y: -63}
-        - {x: 46, y: -63}
-        - {x: 49, y: -60}
-        - {x: 49, y: -57}
-        - {x: 46, y: -54}
-        - {x: 64, y: 6}
-        - {x: 64, y: 35}
-        - {x: 49, y: 59}
-        - {x: 45, y: 64}
-        - {x: 23, y: 64}
-        - {x: 7, y: 55}
-        - {x: 6, y: 22}
-        - {x: 6, y: -63}
-        - {x: 11, y: -64}
-        - {x: 26, y: -64}
-        - {x: 27, y: -61}
-        - {x: 27, y: -58}
-        - {x: 28, y: -60}
+      - - {x: -5, y: -62.5}
+        - {x: 12, y: -62.5}
+        - {x: 14, y: -60.5}
+        - {x: 15, y: -56.5}
+        - {x: 27, y: -5.5}
+        - {x: 27, y: 39.5}
+        - {x: 13, y: 62.5}
+        - {x: -11, y: 62.5}
+        - {x: -26, y: 54.5}
+        - {x: -27, y: 29.5}
+        - {x: -27, y: -62.5}
+        - {x: -6, y: -62.5}
+        - {x: -9, y: -54.5}
+        - {x: -7, y: -60.5}
     - name: "sprsheet_Genevi\xE9ve-attack_3"
       rect:
         serializedVersion: 2
-        x: 192
-        y: 1
-        width: 64
-        height: 127
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        x: 196
+        y: 2
+        width: 50
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 36, y: -63.5}
-        - {x: 52, y: -63.5}
-        - {x: 56, y: -57.5}
-        - {x: 56, y: 63.5}
-        - {x: 24, y: 63.5}
-        - {x: 9, y: 56.5}
-        - {x: 2, y: 17.5}
-        - {x: 2, y: -35.5}
-        - {x: 9, y: -63.5}
-        - {x: 31, y: -63.5}
-        - {x: 32, y: -61.5}
-        - {x: 32, y: -58.5}
-        - {x: 33, y: -60.5}
+      - - {x: 6, y: -62.5}
+        - {x: 25, y: -62.5}
+        - {x: 25, y: 62.5}
+        - {x: -3, y: 62.5}
+        - {x: -18, y: 54.5}
+        - {x: -25, y: 8.5}
+        - {x: -25, y: -34.5}
+        - {x: -21, y: -62.5}
+        - {x: 2, y: -62.5}
+        - {x: 3, y: -61.5}
+        - {x: 3, y: -58.5}
+        - {x: 4, y: -60.5}
     outline: []
   spritePackingTag: 
   userData: 

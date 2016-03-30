@@ -14,7 +14,9 @@ public class RightScript : MonoBehaviour {
 	void Update () {
 		if (Input.touchCount > 0 || Input.GetKey(KeyCode.RightArrow)) {
 			player.transform.Translate (Vector2.right * 4f * Time.deltaTime);
-			player.transform.eulerAngles = new Vector2 (0, 0);
+			player.GetComponent<Animator> ().Play ("PlayerRunAnim");
+			player.transform.localEulerAngles = new Vector2 (0, 0);
+			//player.transform.localScale = new Vector3(player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
 		}
 	}
 
