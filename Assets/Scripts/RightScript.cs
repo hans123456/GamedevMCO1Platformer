@@ -16,7 +16,6 @@ public class RightScript : MonoBehaviour {
 			player.transform.Translate (Vector2.right * 4f * Time.deltaTime);
 			player.GetComponent<Animator> ().Play ("PlayerRunAnim");
 			player.transform.localEulerAngles = new Vector2 (0, 0);
-			//player.transform.localScale = new Vector3(player.transform.localScale.x, player.transform.localScale.y, player.transform.localScale.z);
 		}
 	}
 
