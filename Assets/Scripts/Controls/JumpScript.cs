@@ -20,10 +20,11 @@ public class JumpScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if ((Input.touchCount > 0 || Input.GetKeyDown (KeyCode.UpArrow)) && IsGrounded()) {
-			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * player.jumpHeight);
+		if (Input.GetKeyDown (KeyCode.UpArrow) && IsGrounded()) {
+			player.jump = true;
+			//playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * player.jumpHeight);
 		}
-		playerObject.GetComponent<Animator> ().SetBool ("Grounded", player.grounded);
+		//playerObject.GetComponent<Animator> ().SetBool ("Grounded", player.grounded);
 	}
 		
 }

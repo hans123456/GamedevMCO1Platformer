@@ -3,7 +3,8 @@ using System.Collections;
 
 public class AttackScript : MonoBehaviour {
 	
-	private GameObject player;
+	private GameObject playerObject;
+	private Player player;
 
 	private bool attacking = false;
 
@@ -15,19 +16,21 @@ public class AttackScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.FindGameObjectWithTag ("Player");
+		playerObject = GameObject.FindGameObjectWithTag ("Player");
+		player = playerObject.GetComponentInParent<Player> ();
 		attackTrigger.enabled = false;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		
-		if ((Input.touchCount > 0 || Input.GetKeyDown (KeyCode.Space)) && !attacking) {
-			attacking = true;
-			attackTimer = attackCD;
-			attackTrigger.enabled = true;
+		if (Input.GetKeyDown (KeyCode.Space) && !attacking) {
+			player.attack = true;
+			//attacking = true;
+			//attackTimer = attackCD;
+			//attackTrigger.enabled = true;
 		}
-
+		/*
 		if (attacking) {
 			if (attackTimer > 0) {
 				attackTimer -= Time.deltaTime;
@@ -39,7 +42,7 @@ public class AttackScript : MonoBehaviour {
 		}
 
 		player.GetComponent<Animator> ().SetBool ("Attacking", attacking);
-
+		*/
 	}
 
 }
