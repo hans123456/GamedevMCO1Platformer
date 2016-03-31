@@ -5,7 +5,6 @@ public class AugusteProjectileScript : MonoBehaviour {
 
 	private float startPosX;
 	public bool start = false;
-	public bool facingRight = true;
 	public float distanceBeforeDestroy;
 	public float moveSpeed;
 	private GameObject playerObject;
@@ -44,6 +43,8 @@ public class AugusteProjectileScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col) {
+		if (!start)
+			return;
 		if (col.tag.Equals ("Player")) {
 			col.SendMessageUpwards ("Damage", 1);
 			Destroy (gameObject);

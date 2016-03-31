@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Auguste\Auguste.cs" />
+     <Compile Include="Assets\Scripts\Auguste\AugusteAI.cs" />
      <Compile Include="Assets\Scripts\Auguste\AugusteProjectileScript.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Controls\AttackScript.cs" />

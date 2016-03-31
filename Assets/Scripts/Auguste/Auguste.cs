@@ -6,7 +6,7 @@ public class Auguste : MonoBehaviour {
 	public float moveSpeed;
 
 	public bool attacking = false;
-	private GameObject theaObject;
+	private GameObject augusteObject;
 
 	private float attackTimer = 0;
 	private float attackCD = 0.3f;
@@ -17,14 +17,16 @@ public class Auguste : MonoBehaviour {
 	public bool goRight = false;
 	public bool attack = false;
 
-	public GameObject TheaProjectile;
+	public GameObject AugusteProjectile;
+	private GameObject projectile1, projectile2;
+	private float time1, time2;
 	public bool facingRight = true;
 
 	public int hitPoints;
 
 	// Use this for initialization
 	void Start () {
-		theaObject = gameObject;
+		augusteObject = gameObject;
 	}
 	
 	// Update is called once per frame
@@ -37,16 +39,27 @@ public class Auguste : MonoBehaviour {
 		if (attack && !attacking) {
 			attacking = true;
 			attackTimer = attackCD;
-			GameObject projectile = Instantiate (TheaProjectile);
-			projectile.GetComponentInParent<TheaProjectileScript> ().facingRight = facingRight;
-			if (facingRight) {
-				projectile.transform.position = transform.position;
-				projectile.transform.localEulerAngles = new Vector2 (0, 0);
-			} else if (!facingRight) {
-				projectile.transform.position = transform.position;	
-				projectile.transform.localEulerAngles = new Vector2 (0, 180);
+
+			if (projectile1 == null) {
+				projectile1 = Instantiate (AugusteProjectile);
+				time1 = Random.Range (0, 2);
 			}
-			projectile.GetComponentInParent<TheaProjectileScript> ().start = true;
+			projectile1.transform.position = new Vector3 (transform.position.x + 2, transform.position.y + 2, transform.position.z);
+
+			if (projectile2 == null) {
+				projectile2 = Instantiate (AugusteProjectile);
+				time2 = Random.Range (0, 2);
+			}
+			projectile2.transform.position = new Vector3 (transform.position.x - 2, transform.position.y + 2, transform.position.z);
+
+		}
+
+		if (projectile1 != null) {
+			projectile1.transform.position = new Vector3 (transform.position.x + 2, transform.position.y + 2, transform.position.z);
+		}
+
+		if (projectile2 != null) {
+			projectile2.transform.position = new Vector3 (transform.position.x - 2, transform.position.y + 2, transform.position.z);
 		}
 
 		if (attacking) {
@@ -55,33 +68,39 @@ public class Auguste : MonoBehaviour {
 			} else {
 				attacking = false;
 				attackTimer = 0;
+
+				if (time1 <= 0) {
+					projectile1.GetComponentInParent<AugusteProjectileScript> ().start = true;
+					projectile1 = null;
+				}
+
+				if (time2 <= 0) {
+					projectile2.GetComponentInParent<AugusteProjectileScript> ().start = true;
+					projectile2 = null;
+				}
+
 			}
 		}
 
-		GetComponent<Animator> ().SetBool ("Attacking", attacking);
-
 		if (!attacking) {
 			if (goRight) {
-				theaObject.transform.Translate (Vector2.right * moveSpeed * Time.deltaTime);
-				theaObject.transform.localEulerAngles = new Vector2 (0, 0);
-				theaObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs (1.0f));
+				augusteObject.transform.Translate (Vector2.left * moveSpeed * Time.deltaTime);
+				augusteObject.transform.localEulerAngles = new Vector2 (0, 180);
 				facingRight = true;
 			} else if (goLeft) {
-				theaObject.transform.Translate (-Vector2.left * moveSpeed * Time.deltaTime);
-				theaObject.transform.localEulerAngles = new Vector2 (0, 180);
-				theaObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs (1.0f));
+				augusteObject.transform.Translate (-Vector2.right * moveSpeed * Time.deltaTime);
+				augusteObject.transform.localEulerAngles = new Vector2 (0, 0);
 				facingRight = false;
-			} else {
-				theaObject.GetComponent<Animator> ().SetFloat ("Speed", 0);
 			}
 		}
 
 		goLeft = goRight = attack = false;
+		time1 -= Time.deltaTime;
+		time2 -= Time.deltaTime;
 
 	}
 
 	void Damage (int dmg) {
-		Debug.Log ("Damage");
 		hitPoints -= dmg;
 	}
 
