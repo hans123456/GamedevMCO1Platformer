@@ -1,9 +1,13 @@
 fileFormatVersion: 2
 guid: a9460b57c19bdb24fbd242a489ec7cd5
-timeCreated: 1459435160
+timeCreated: 1459439313
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: sprsheet_Thea-walk_0
+    21300002: sprsheet_Thea-walk_1
+    21300004: sprsheet_Thea-walk_2
+    21300006: sprsheet_Thea-walk_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +42,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +53,91 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: sprsheet_Thea-walk_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 62
+        height: 122
+      alignment: 9
+      pivot: {x: 0.49182534, y: 0.4875371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.506828, y: 55.520477}
+        - {x: 20.506828, y: 62.520477}
+        - {x: -16.493172, y: 62.520477}
+        - {x: -20.493172, y: 61.520477}
+        - {x: -30.493172, y: 29.520477}
+        - {x: -30.493172, y: -9.479523}
+        - {x: -10.493172, y: -59.479523}
+        - {x: 26.506828, y: -59.479523}
+        - {x: 31.506828, y: -55.479523}
+        - {x: 31.506828, y: -22.479523}
+        - {x: 28.506828, y: -14.479523}
+    - name: sprsheet_Thea-walk_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3
+        width: 62
+        height: 124
+      alignment: 9
+      pivot: {x: 0.49999976, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.000015, y: 62}
+        - {x: -12.999985, y: 62}
+        - {x: -30.999985, y: 38}
+        - {x: -30.999985, y: -35}
+        - {x: -28.999985, y: -46}
+        - {x: -16.999985, y: -62}
+        - {x: 30.000015, y: -62}
+        - {x: 31.000015, y: -61}
+        - {x: 31.000015, y: 17}
+        - {x: 29.000015, y: 28}
+    - name: sprsheet_Thea-walk_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 4
+        width: 62
+        height: 122
+      alignment: 9
+      pivot: {x: 0.49182498, y: 0.49584568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.506851, y: 54.50683}
+        - {x: 20.506851, y: 61.50683}
+        - {x: -16.493149, y: 61.50683}
+        - {x: -20.493149, y: 60.50683}
+        - {x: -30.493149, y: 28.506828}
+        - {x: -30.493149, y: -10.493172}
+        - {x: -10.493149, y: -60.49317}
+        - {x: 26.506851, y: -60.49317}
+        - {x: 31.506851, y: -56.49317}
+        - {x: 31.506851, y: -23.493172}
+        - {x: 28.506851, y: -15.493172}
+    - name: sprsheet_Thea-walk_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 4
+        width: 62
+        height: 122
+      alignment: 9
+      pivot: {x: 0.49182498, y: 0.4916914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.493149, y: -25.986351}
+        - {x: -23.493149, y: -59.98635}
+        - {x: 31.506851, y: -59.98635}
+        - {x: 31.506851, y: 34.01365}
+        - {x: 24.506851, y: 62.01365}
+        - {x: -18.493149, y: 62.01365}
+        - {x: -20.493149, y: 61.01365}
+        - {x: -30.493149, y: 44.01365}
     outline: []
   spritePackingTag: 
   userData: 
