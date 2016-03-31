@@ -7,14 +7,14 @@ public class Movement2 : buttons {
     public type buttType;
 
     private GameObject playerObject;
-    private Rigidbody2D playerRigid;
+    //private Rigidbody2D playerRigid;
 	private Player player;
     private GUITexture buttonTexture;
    
     void Start()
     {
 		playerObject = GameObject.FindGameObjectWithTag ("Player");
-		playerRigid = playerObject.GetComponent<Rigidbody2D>();
+		//playerRigid = playerObject.GetComponent<Rigidbody2D>();
 		player = playerObject.GetComponentInParent<Player> ();
 		buttonTexture = gameObject.GetComponentInParent<GUITexture> ();
     }

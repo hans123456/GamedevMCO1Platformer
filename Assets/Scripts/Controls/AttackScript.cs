@@ -6,25 +6,25 @@ public class AttackScript : MonoBehaviour {
 	private GameObject playerObject;
 	private Player player;
 
-	private bool attacking = false;
+	//private bool attacking = false;
 
-	private float attackTimer = 0;
-	private float attackCD = 0.3f;
+	//private float attackTimer = 0;
+	//private float attackCD = 0.3f;
 
-	public Collider2D attackTrigger;
-	private Animator anim;
+	//public Collider2D attackTrigger;
+	//private Animator anim;
 
 	// Use this for initialization
 	void Start () {
 		playerObject = GameObject.FindGameObjectWithTag ("Player");
 		player = playerObject.GetComponentInParent<Player> ();
-		attackTrigger.enabled = false;
+		//attackTrigger.enabled = false;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		
-		if (Input.GetKeyDown (KeyCode.Space) && !attacking) {
+		if (Input.GetKeyDown (KeyCode.Space)) {
 			player.attack = true;
 			//attacking = true;
 			//attackTimer = attackCD;

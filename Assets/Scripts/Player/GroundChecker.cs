@@ -16,7 +16,7 @@ public class GroundChecker : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D col) {
-		if (col.tag.Equals("Ground"))
+		if (col.tag.Equals ("Ground"))
 			player.grounded = true;
 	}
 

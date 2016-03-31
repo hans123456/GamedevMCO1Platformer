@@ -48,16 +48,17 @@
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Controls\AttackScript.cs" />
      <Compile Include="Assets\Scripts\Controls\JumpScript.cs" />
-     <Compile Include="Assets\Scripts\Controls\LeftScript.cs" />
      <Compile Include="Assets\Scripts\Controls\Movement2.cs" />
      <Compile Include="Assets\Scripts\Controls\MovementScript.cs" />
-     <Compile Include="Assets\Scripts\Controls\RightScript.cs" />
      <Compile Include="Assets\Scripts\Controls\buttons.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\Player\AttackTrigger.cs" />
+     <Compile Include="Assets\Scripts\Player\EnemyChecker.cs" />
      <Compile Include="Assets\Scripts\Player\GroundChecker.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Thea\Thea.cs" />
+     <Compile Include="Assets\Scripts\Thea\TheaAI.cs" />
+     <Compile Include="Assets\Scripts\Thea\TheaProjectile.cs" />
      <Compile Include="Assets\Spin.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

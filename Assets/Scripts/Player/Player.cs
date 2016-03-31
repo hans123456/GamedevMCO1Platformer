@@ -21,9 +21,13 @@ public class Player : MonoBehaviour {
 	public bool jump = false;
 	public bool attack = false;
 
+	private int lives = 5;
+
+	public bool facingRight = true;
+
 	// Use this for initialization
 	void Start () {
-		playerObject = GameObject.FindGameObjectWithTag ("Player");
+		playerObject = gameObject;
 	}
 
 	// Update is called once per frame
@@ -33,10 +37,12 @@ public class Player : MonoBehaviour {
 			playerObject.transform.Translate (Vector2.right * moveSpeed * Time.deltaTime);
 			playerObject.transform.localEulerAngles = new Vector2 (0, 0);
 			playerObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs(1.0f));
+			facingRight = true;
 		} else if (goLeft) {
 			playerObject.transform.Translate (-Vector2.left * moveSpeed * Time.deltaTime);
 			playerObject.transform.localEulerAngles = new Vector2 (0, 180);
 			playerObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs (1.0f));
+			facingRight = false;
 		} else {
 			playerObject.GetComponent<Animator> ().SetFloat ("Speed", 0);
 		}
@@ -46,7 +52,6 @@ public class Player : MonoBehaviour {
 		}
 
 		GetComponent<Animator> ().SetBool ("Grounded", grounded);
-
 
 		if (attack && !attacking) {
 			attacking = true;
@@ -67,6 +72,18 @@ public class Player : MonoBehaviour {
 		GetComponent<Animator> ().SetBool ("Attacking", attacking);
 
 		goLeft = goRight = attack = jump = false;
+
+	}
+
+	void Damage(int dmg) {
+		lives -= dmg;
+		Debug.Log ("Damage");
+
+		if (facingRight) {
+			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.left * 10.0f);
+		} else if (facingRight) {
+			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.left * 10.0f);
+		}
 
 	}
 
