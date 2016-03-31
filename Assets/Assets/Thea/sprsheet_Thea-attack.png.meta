@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: c11f3c2e76fa37b40a29f195a3c6465e
+timeCreated: 1459437278
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sprsheet_Thea-attack_0
+    21300002: sprsheet_Thea-attack_1
+    21300004: sprsheet_Thea-attack_2
+    21300006: sprsheet_Thea-attack_3
+    21300008: sprsheet_Thea-attack_4
+    21300010: sprsheet_Thea-attack_5
+    21300012: sprsheet_Thea-attack_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sprsheet_Thea-attack_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 5
+        width: 51
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5955548, y: 0.39740467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.373299, y: 91.59449}
+        - {x: -30.373299, y: 66.59449}
+        - {x: -26.373299, y: 65.59449}
+        - {x: -22.373299, y: 65.59449}
+        - {x: -22.373299, y: -12.40551}
+        - {x: -10.373299, y: -60.40551}
+        - {x: 20.626701, y: -60.40551}
+        - {x: 20.626701, y: 69.59449}
+        - {x: -15.373299, y: 91.59449}
+    - name: sprsheet_Thea-attack_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 5
+        width: 54
+        height: 148
+      alignment: 9
+      pivot: {x: 0.3375569, y: 0.40780273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.228073, y: -49.354805}
+        - {x: -17.228073, y: -60.354805}
+        - {x: 13.771927, y: -60.354805}
+        - {x: 33.771927, y: 26.645195}
+        - {x: 33.771927, y: 87.645195}
+        - {x: 18.771927, y: 87.645195}
+        - {x: -18.228073, y: 64.645195}
+      - - {x: 31.771927, y: 51.645195}
+        - {x: 31.771927, y: 47.645195}
+        - {x: 34.771927, y: 43.645195}
+        - {x: 35.771927, y: 43.645195}
+        - {x: 35.771927, y: 51.645195}
+        - {x: 34.771927, y: 52.645195}
+    - name: sprsheet_Thea-attack_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 6
+        width: 81
+        height: 122
+      alignment: 9
+      pivot: {x: 0.22324494, y: 0.48402256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.91716, y: 38.94925}
+        - {x: 19.91716, y: 62.94925}
+        - {x: -9.08284, y: 62.94925}
+        - {x: -18.08284, y: 55.94925}
+        - {x: -18.08284, y: -59.05075}
+        - {x: 29.91716, y: -59.05075}
+        - {x: 62.91716, y: -34.05075}
+        - {x: 62.91716, y: 42.94925}
+        - {x: 39.91716, y: 44.94925}
+    - name: sprsheet_Thea-attack_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 5
+        width: 88
+        height: 122
+      alignment: 9
+      pivot: {x: 0.39550364, y: 0.49201128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.804321, y: 61.974625}
+        - {x: -20.804321, y: 60.974625}
+        - {x: -32.80432, y: 42.974625}
+        - {x: -32.80432, y: -6.0253754}
+        - {x: -10.804321, y: -60.025375}
+        - {x: 28.195679, y: -60.025375}
+        - {x: 33.19568, y: -56.025375}
+        - {x: 33.19568, y: 30.974625}
+        - {x: 22.195679, y: 61.974625}
+      - - {x: 34.19568, y: 42.974625}
+        - {x: 23.195679, y: -3.0253754}
+        - {x: 23.195679, y: -14.025375}
+        - {x: 30.195679, y: -20.025375}
+        - {x: 42.19568, y: -20.025375}
+        - {x: 52.19568, y: -9.025375}
+        - {x: 52.19568, y: 30.974625}
+        - {x: 50.19568, y: 42.974625}
+    - name: sprsheet_Thea-attack_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 5
+        width: 60
+        height: 122
+      alignment: 9
+      pivot: {x: 0.6786875, y: 0.4920114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.7212524, y: 61.97461}
+        - {x: -13.721252, y: 56.97461}
+        - {x: -17.721252, y: 39.97461}
+        - {x: -9.721252, y: 31.97461}
+        - {x: -16.721252, y: 23.97461}
+        - {x: -15.721252, y: 32.97461}
+        - {x: -23.721252, y: 39.97461}
+        - {x: -33.721252, y: 34.97461}
+        - {x: -34.721252, y: 24.97461}
+        - {x: -34.721252, y: -42.02539}
+        - {x: -18.721252, y: -59.02539}
+        - {x: -13.721252, y: -60.02539}
+        - {x: 19.278748, y: -60.02539}
+        - {x: 19.278748, y: 61.97461}
+    - name: sprsheet_Thea-attack_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 5
+        width: 65
+        height: 122
+      alignment: 9
+      pivot: {x: 0.54498386, y: 0.4920114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.42395, y: 61.97461}
+        - {x: -22.42395, y: 60.97461}
+        - {x: -34.42395, y: 42.97461}
+        - {x: -34.42395, y: -6.0253906}
+        - {x: -12.42395, y: -60.02539}
+        - {x: 29.57605, y: -60.02539}
+        - {x: 29.57605, y: 61.97461}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
