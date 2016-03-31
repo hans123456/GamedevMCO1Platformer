@@ -7,7 +7,6 @@ public class JumpScript : MonoBehaviour {
 	private Player player;
 	private float distanceToGround;
 	private Transform groundCheck;
-	public float jumpHeight;
 
 	// Use this for initialization
 	void Start () {
@@ -21,9 +20,10 @@ public class JumpScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if ((Input.touchCount > 0 || Input.GetKeyDown(KeyCode.UpArrow)) && IsGrounded()) {
-			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * jumpHeight);
+		if ((Input.touchCount > 0 || Input.GetKeyDown (KeyCode.UpArrow)) && IsGrounded()) {
+			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * player.jumpHeight);
 		}
+		playerObject.GetComponent<Animator> ().SetBool ("Grounded", player.grounded);
 	}
-
+		
 }

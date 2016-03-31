@@ -4,6 +4,8 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
 	public bool grounded = true;
+	public float jumpHeight;
+	public float moveSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -14,4 +16,5 @@ public class Player : MonoBehaviour {
 	void Update () {
 	
 	}
+
 }
