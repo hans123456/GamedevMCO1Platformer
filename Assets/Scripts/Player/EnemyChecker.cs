@@ -14,5 +14,5 @@ public class EnemyChecker : MonoBehaviour {
 			gameObject.SendMessageUpwards ("Damage", 1);
 		}
 	}
-*/
+*/	
 }

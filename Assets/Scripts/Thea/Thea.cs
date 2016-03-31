@@ -17,7 +17,10 @@ public class Thea : MonoBehaviour {
 	public bool goRight = false;
 	public bool attack = false;
 
+	public GameObject TheaProjectile;
 	public bool facingRight = true;
+
+	public int hitPoints;
 
 	// Use this for initialization
 	void Start () {
@@ -27,10 +30,23 @@ public class Thea : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (hitPoints <= 0) {
+			Destroy (gameObject);
+		}
+
 		if (attack && !attacking) {
 			attacking = true;
 			attackTimer = attackCD;
-			// fire bolt here
+			GameObject projectile = Instantiate (TheaProjectile);
+			projectile.GetComponentInParent<TheaProjectileScript> ().facingRight = facingRight;
+			if (facingRight) {
+				projectile.transform.position = transform.position;
+				projectile.transform.localEulerAngles = new Vector2 (0, 0);
+			} else if (!facingRight) {
+				projectile.transform.position = transform.position;	
+				projectile.transform.localEulerAngles = new Vector2 (0, 180);
+			}
+			projectile.GetComponentInParent<TheaProjectileScript> ().start = true;
 		}
 
 		if (attacking) {
@@ -62,6 +78,11 @@ public class Thea : MonoBehaviour {
 
 		goLeft = goRight = attack = false;
 
+	}
+
+	void Damage (int dmg) {
+		Debug.Log ("Damage");
+		hitPoints -= dmg;
 	}
 
 }

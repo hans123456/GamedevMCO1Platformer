@@ -10,6 +10,11 @@ public class GroundChecker : MonoBehaviour {
 		player = gameObject.GetComponentInParent<Player> ();
 	}
 
+	// Update is called once per frame
+	void Update () {
+
+	}
+		
 	void OnTriggerEnter2D(Collider2D col) {
 		if (col.tag.Equals("Ground"))
 			player.grounded = true;
@@ -23,11 +28,6 @@ public class GroundChecker : MonoBehaviour {
 	void OnTriggerExit2D(Collider2D col) {
 		if (col.tag.Equals("Ground"))
 			player.grounded = false;
-	}
-
-	// Update is called once per frame
-	void Update () {
-
 	}
 
 }
