@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 026955c82ab90484ca7fa03ec230819f
+timeCreated: 1459448889
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "sprsheet_Genevi\xE9ve-attjump_0"
+    21300002: "sprsheet_Genevi\xE9ve-attjump_1"
+    21300004: "sprsheet_Genevi\xE9ve-attjump_2"
+    21300006: "sprsheet_Genevi\xE9ve-attjump_3"
+    21300008: "sprsheet_Genevi\xE9ve-attjump_4"
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: "sprsheet_Genevi\xE9ve-attjump_0"
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5
+        width: 46
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4267817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 37.505848}
+        - {x: -23, y: -34.494152}
+        - {x: -10, y: -52.494152}
+        - {x: 14, y: -52.494152}
+        - {x: 23, y: -42.494152}
+        - {x: 23, y: 70.505844}
+        - {x: 14, y: 70.505844}
+        - {x: -12, y: 57.505848}
+    - name: "sprsheet_Genevi\xE9ve-attjump_1"
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 5
+        width: 52
+        height: 105
+      alignment: 9
+      pivot: {x: 0.6113362, y: 0.50612634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.789482, y: 51.856735}
+        - {x: -31.789482, y: 48.856735}
+        - {x: -31.789482, y: -0.14326477}
+        - {x: -25.789482, y: -26.143265}
+        - {x: -0.7894821, y: -53.143265}
+        - {x: 20.210518, y: -53.143265}
+        - {x: 20.210518, y: 51.856735}
+    - name: "sprsheet_Genevi\xE9ve-attjump_2"
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 5
+        width: 49
+        height: 105
+      alignment: 9
+      pivot: {x: 0.46061614, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.57019, y: 52.499992}
+        - {x: -22.57019, y: 41.499992}
+        - {x: -22.57019, y: -41.500008}
+        - {x: -7.5701904, y: -52.500008}
+        - {x: 11.42981, y: -52.500008}
+        - {x: 26.42981, y: -29.500008}
+        - {x: 26.42981, y: 52.499992}
+    - name: "sprsheet_Genevi\xE9ve-attjump_3"
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 5
+        width: 49
+        height: 105
+      alignment: 9
+      pivot: {x: 0.4343598, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9.71637, y: 52.499992}
+        - {x: -19.28363, y: 52.499992}
+        - {x: -21.28363, y: 42.499992}
+        - {x: -21.28363, y: -40.500008}
+        - {x: -3.2836304, y: -52.500008}
+        - {x: 14.71637, y: -52.500008}
+        - {x: 27.71637, y: -5.5000076}
+        - {x: 27.71637, y: 22.499992}
+        - {x: 16.71637, y: 43.499992}
+    - name: "sprsheet_Genevi\xE9ve-attjump_4"
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 5
+        width: 52
+        height: 105
+      alignment: 9
+      pivot: {x: 0.57422405, y: 0.48162076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.85965, y: 54.42982}
+        - {x: -29.85965, y: 17.429821}
+        - {x: -29.85965, y: -24.570179}
+        - {x: 1.1403503, y: -50.57018}
+        - {x: 22.14035, y: -50.57018}
+        - {x: 22.14035, y: 54.42982}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
