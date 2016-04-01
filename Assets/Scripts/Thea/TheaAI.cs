@@ -3,7 +3,6 @@ using System.Collections;
 
 public class TheaAI : MonoBehaviour {
 
-	//private Random random;
 	private GameObject playerObject;
 
 	private Thea thea;
@@ -16,7 +15,6 @@ public class TheaAI : MonoBehaviour {
 	void Start () {
 		playerObject = GameObject.FindGameObjectWithTag ("Player");
 		thea = GetComponentInParent<Thea> ();
-		//random = new Random ();
 		currAttackCD = attackCD;
 	}
 
