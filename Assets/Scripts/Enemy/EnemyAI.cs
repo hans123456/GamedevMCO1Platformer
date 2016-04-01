@@ -31,23 +31,27 @@ public class EnemyAI : MonoBehaviour {
 
 		if (playerObject.transform.position.x > startX && playerObject.transform.position.x < endX) {
 
-			if (distance > 1) {
-				if (relativePoint < 0.0) {	// to the left
-					enemy.goLeft = true;
-				} else if (relativePoint > 0.0) {	// to the right
-					enemy.goRight = true;
+			if (distance < Mathf.Abs (startX - endX)) {
+
+				if (distance > 1) {
+					if (relativePoint < 0.0) {	// to the left
+						enemy.goLeft = true;
+					} else if (relativePoint > 0.0) {	// to the right
+						enemy.goRight = true;
+					}
 				}
-			}
 
-			if (currAttackCD > 0) {
+				if (currAttackCD > 0) {
 
-				currAttackCD -= Time.deltaTime;
+					currAttackCD -= Time.deltaTime;
 
-			} else if (currAttackCD <= 0) {
+				} else if (currAttackCD <= 0) {
 
-				currAttackCD = attackCD;
-				enemy.attack = true;
+					currAttackCD = attackCD;
+					enemy.attack = true;
 
+				}
+			
 			}
 
 		} else {
