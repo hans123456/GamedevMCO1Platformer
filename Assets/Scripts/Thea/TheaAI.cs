@@ -7,7 +7,7 @@ public class TheaAI : MonoBehaviour {
 
 	private Thea thea;
 
-	private float attackCD = 3.0f;
+	public float attackCD = 3.0f;
 	private float currAttackCD = 0;
 	public bool startBattle = false;
 

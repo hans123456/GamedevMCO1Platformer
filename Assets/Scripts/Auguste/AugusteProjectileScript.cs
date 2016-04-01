@@ -49,9 +49,9 @@ public class AugusteProjectileScript : MonoBehaviour {
 			col.SendMessageUpwards ("Damage", 1);
 			Destroy (gameObject);
 		}
-		if (col.tag.Equals ("Ground")) {
+		/*if (col.tag.Equals ("Ground")) {
 			Destroy (gameObject);		
-		}
+		}*/
 	}
 
 }

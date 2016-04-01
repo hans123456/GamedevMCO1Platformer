@@ -47,8 +47,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Auguste\Auguste.cs" />
      <Compile Include="Assets\Scripts\Auguste\AugusteAI.cs" />
+     <Compile Include="Assets\Scripts\Auguste\AugusteBattleRecognizer.cs" />
      <Compile Include="Assets\Scripts\Auguste\AugusteProjectileScript.cs" />
-     <Compile Include="Assets\Scripts\Auguste\AugusteStartChecker.cs" />
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\Controls\AttackScript.cs" />
      <Compile Include="Assets\Scripts\Controls\JumpScript.cs" />
@@ -65,8 +65,8 @@
      <Compile Include="Assets\Scripts\PushPrevention.cs" />
      <Compile Include="Assets\Scripts\Thea\Thea.cs" />
      <Compile Include="Assets\Scripts\Thea\TheaAI.cs" />
+     <Compile Include="Assets\Scripts\Thea\TheaBattleRecognizer.cs" />
      <Compile Include="Assets\Scripts\Thea\TheaProjectileScript.cs" />
-     <Compile Include="Assets\Scripts\Thea\TheaStartChecker.cs" />
      <Compile Include="Assets\Spin.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

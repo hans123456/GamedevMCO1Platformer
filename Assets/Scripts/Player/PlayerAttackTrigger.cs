@@ -7,7 +7,7 @@ public class PlayerAttackTrigger : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col) {
 
-		if (col.isTrigger == false && col.tag.Equals ("Enemy")) {
+		if (col.tag.Equals ("Enemy")) {
 			col.SendMessageUpwards ("Damage", dmg);
 		}
 
