@@ -55,12 +55,14 @@
      <Compile Include="Assets\Scripts\Controls\Movement2.cs" />
      <Compile Include="Assets\Scripts\Controls\MovementScript.cs" />
      <Compile Include="Assets\Scripts\Controls\buttons.cs" />
-     <Compile Include="Assets\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Scripts\Player\AttackTrigger.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyAttackTrigger.cs" />
      <Compile Include="Assets\Scripts\Player\EnemyChecker.cs" />
      <Compile Include="Assets\Scripts\Player\GroundChecker.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
-     <Compile Include="Assets\Scripts\Thea\PushPrevention.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerAttackTrigger.cs" />
+     <Compile Include="Assets\Scripts\PushPrevention.cs" />
      <Compile Include="Assets\Scripts\Thea\Thea.cs" />
      <Compile Include="Assets\Scripts\Thea\TheaAI.cs" />
      <Compile Include="Assets\Scripts\Thea\TheaProjectileScript.cs" />
