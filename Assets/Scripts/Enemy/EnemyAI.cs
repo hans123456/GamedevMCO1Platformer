@@ -51,7 +51,7 @@ public class EnemyAI : MonoBehaviour {
 					enemy.attack = true;
 
 				}
-			
+				
 			}
 
 		} else {
