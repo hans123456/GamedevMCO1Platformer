@@ -21,7 +21,8 @@ public class Player : MonoBehaviour {
 	public bool jump = false;
 	public bool attack = false;
 
-	private int lives = 5;
+	public int lives = 3;
+	public int hitPoints = 5;
 
 	public bool facingRight = true;
 
@@ -76,14 +77,17 @@ public class Player : MonoBehaviour {
 	}
 
 	void Damage(int dmg) {
-		lives -= dmg;
+		
+		hitPoints -= dmg;
 		Debug.Log ("Damage");
 
+		/*
 		if (facingRight) {
 			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.left * 10.0f);
 		} else if (facingRight) {
 			playerObject.GetComponent<Rigidbody2D> ().AddForce (Vector2.left * 10.0f);
 		}
+		*/
 
 	}
 

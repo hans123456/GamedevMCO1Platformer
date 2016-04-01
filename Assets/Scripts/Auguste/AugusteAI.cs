@@ -8,7 +8,7 @@ public class AugusteAI : MonoBehaviour {
 
 	private float attackCD = 3.0f;
 	private float currAttackCD = 0;
-	private bool startBattle = false;
+	public bool startBattle = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,11 +22,6 @@ public class AugusteAI : MonoBehaviour {
 
 		float relativePoint = playerObject.transform.position.x - transform.position.x;
 		float distanceX = Mathf.Abs(transform.position.x - playerObject.transform.position.x);
-
-		if (relativePoint < 0.0 && 
-			distanceX < 5) {	// 5 to the left
-			startBattle = true;
-		}
 
 		if (!startBattle) {
 			return;
