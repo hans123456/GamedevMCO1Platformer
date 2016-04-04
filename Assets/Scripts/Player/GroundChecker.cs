@@ -5,6 +5,7 @@ public class GroundChecker : MonoBehaviour {
 
 	private Player player;
 	private Rigidbody2D rb;
+	private float precisionZero;
 
 	// Use this for initialization
 	void Start () {
@@ -18,17 +19,17 @@ public class GroundChecker : MonoBehaviour {
 	}
 		
 	void OnTriggerEnter2D(Collider2D col) {
-		if (col.isTrigger == false && col.tag.Equals("Ground") && rb.velocity.y == 0)
+		if (col.isTrigger == false && col.tag.Equals ("Ground") && Mathf.Approximately(rb.velocity.y, 0))
 			player.grounded = true;
 	}
 
 	void OnTriggerStay2D(Collider2D col) {
-		if (col.isTrigger == false && col.tag.Equals ("Ground") && rb.velocity.y == 0)
+		if (col.isTrigger == false && col.tag.Equals ("Ground") && Mathf.Approximately(rb.velocity.y, 0))
 			player.grounded = true;
 	}
 
 	void OnTriggerExit2D(Collider2D col) {
-		if (col.isTrigger == false && col.tag.Equals("Ground") || rb.velocity.y > 0)
+		if (col.isTrigger == false && col.tag.Equals("Ground"))// || rb.velocity.y >= precisionZero)
 			player.grounded = false;
 	}
 

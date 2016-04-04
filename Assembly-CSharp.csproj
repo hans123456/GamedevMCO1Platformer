@@ -63,11 +63,11 @@
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAttackTrigger.cs" />
      <Compile Include="Assets\Scripts\PushPrevention.cs" />
+     <Compile Include="Assets\Scripts\Spin.cs" />
      <Compile Include="Assets\Scripts\Thea\Thea.cs" />
      <Compile Include="Assets\Scripts\Thea\TheaAI.cs" />
      <Compile Include="Assets\Scripts\Thea\TheaBattleRecognizer.cs" />
      <Compile Include="Assets\Scripts\Thea\TheaProjectileScript.cs" />
-     <Compile Include="Assets\Spin.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
