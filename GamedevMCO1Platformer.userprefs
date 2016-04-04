@@ -1,11 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Thea\TheaBattleRecognizer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\GroundChecker.cs">
     <Files>
-      <File FileName="Assets\Scripts\Auguste\AugusteBattleRecognizer.cs" Line="20" Column="4" />
-      <File FileName="Assets\Scripts\Controls\buttons.cs" Line="12" Column="10" />
+      <File FileName="Assets\Scripts\Player\Player.cs" Line="51" Column="27" />
+      <File FileName="Assets\Scripts\Auguste\AugusteBattleRecognizer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controls\buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Controls\Movement2.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Thea\TheaBattleRecognizer.cs" Line="22" Column="4" />
+      <File FileName="Assets\Scripts\Thea\TheaBattleRecognizer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\GroundChecker.cs" Line="27" Column="27" />
+      <File FileName="Assets\Scripts\Controls\JumpScript.cs" Line="24" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

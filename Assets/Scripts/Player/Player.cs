@@ -39,12 +39,16 @@ public class Player : MonoBehaviour {
 			playerObject.transform.localEulerAngles = new Vector2 (0, 0);
 			playerObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs(1.0f));
 			facingRight = true;
-		} else if (goLeft) {
+		} 
+
+		if (goLeft) {
 			playerObject.transform.Translate (-Vector2.left * moveSpeed * Time.deltaTime);
 			playerObject.transform.localEulerAngles = new Vector2 (0, 180);
 			playerObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs (1.0f));
 			facingRight = false;
-		} else {
+		} 
+
+		if (!goRight && !goLeft) {
 			playerObject.GetComponent<Animator> ().SetFloat ("Speed", 0);
 		}
 
@@ -100,7 +104,7 @@ public class Player : MonoBehaviour {
         goRight = move;
     }
 
-    public void Jump() {
+	public void Jump() {
         jump = true;
     }
 
