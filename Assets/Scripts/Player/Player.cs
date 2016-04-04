@@ -72,7 +72,8 @@ public class Player : MonoBehaviour {
 
 		GetComponent<Animator> ().SetBool ("Attacking", attacking);
 
-		goLeft = goRight = attack = jump = false;
+		//goLeft = goRight = attack = jump = false;
+        jump = false;
 
 	}
 
@@ -90,5 +91,21 @@ public class Player : MonoBehaviour {
 		*/
 
 	}
+
+    public void MoveLeft(bool move) {
+        goLeft = move;
+    }
+
+    public void MoveRight(bool move) {
+        goRight = move;
+    }
+
+    public void Jump() {
+        jump = true;
+    }
+
+    public void Attack(bool move) {
+        attack = move;
+    }
 
 }

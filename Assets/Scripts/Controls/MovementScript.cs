@@ -16,20 +16,18 @@ public class MovementScript : MonoBehaviour {
 	void Update () {
 	
 		if (Input.GetKey(KeyCode.RightArrow) ) {
-			player.goRight = true;
-			//playerObject.transform.Translate (Vector2.right * player.moveSpeed * Time.deltaTime);
-			//playerObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * player.moveSpeed);
-			//playerObject.transform.localEulerAngles = new Vector2 (0, 0);
-			//playerObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs(1.0f));
+            player.MoveRight(true);
 		} else if (Input.GetKey (KeyCode.LeftArrow)) {
-			player.goLeft = true;
-			//playerObject.transform.Translate (-Vector2.left * player.moveSpeed * Time.deltaTime);
-			//playerObject.GetComponent<Rigidbody2D>().AddForce(Vector2.left * player.moveSpeed);
-			//playerObject.transform.localEulerAngles = new Vector2 (0, 180);
-			//playerObject.GetComponent<Animator> ().SetFloat ("Speed", Mathf.Abs (1.0f));
-		} else {
-			//playerObject.GetComponent<Animator> ().SetFloat ("Speed", 0);
+            player.MoveLeft(true);
 		}
+
+        if (Input.GetKeyUp(KeyCode.RightArrow)) {
+            player.MoveRight(false);
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftArrow)) {
+            player.MoveLeft(false);
+        }
 
 
 	}

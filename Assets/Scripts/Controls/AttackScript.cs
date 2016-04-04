@@ -25,11 +25,13 @@ public class AttackScript : MonoBehaviour {
 	void Update () {
 		
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			player.attack = true;
+            player.Attack(true);
 			//attacking = true;
 			//attackTimer = attackCD;
 			//attackTrigger.enabled = true;
-		}
+        } else if (Input.GetKeyUp(KeyCode.Space)) {
+            player.Attack(false);
+        }
 		/*
 		if (attacking) {
 			if (attackTimer > 0) {
