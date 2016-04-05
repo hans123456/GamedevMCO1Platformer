@@ -33,7 +33,7 @@ public class Thea : MonoBehaviour {
 		if (hitPoints <= 0) {
 			Destroy (gameObject);
 		}
-
+	
 		if (attack && !attacking) {
 			attacking = true;
 			attackTimer = attackCD;

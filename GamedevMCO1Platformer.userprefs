@@ -1,14 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\GroundChecker.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DamageEffect.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player\Player.cs" Line="51" Column="27" />
+      <File FileName="Assets\Scripts\Enemy\Enemy.cs" Line="24" Column="2" />
+      <File FileName="Assets\Scripts\Thea\Thea.cs" Line="85" Column="20" />
+      <File FileName="Assets\Scripts\Player\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Auguste\AugusteBattleRecognizer.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Controls\buttons.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Controls\Movement2.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Thea\TheaBattleRecognizer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\GroundChecker.cs" Line="27" Column="27" />
-      <File FileName="Assets\Scripts\Controls\JumpScript.cs" Line="24" Column="19" />
+      <File FileName="Assets\Scripts\Player\GroundChecker.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controls\JumpScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Auguste\Auguste.cs" Line="41" Column="27" />
+      <File FileName="Assets\Scripts\DamageEffect.cs" Line="13" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

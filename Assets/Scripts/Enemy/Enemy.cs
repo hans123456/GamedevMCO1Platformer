@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour {
 	private GameObject enemyObject;
 
 	private float attackTimer = 0;
-	private float attackCD = 0.3f;
+	private float attackCD = 0.05f;
 
 	public Collider2D attackTrigger;
 	private Animator anim;
@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour {
 
 		if (hitPoints <= 0) {
 			Destroy (gameObject);
-		}
+		} 
 
 		if (attack && !attacking) {
 			attacking = true;
